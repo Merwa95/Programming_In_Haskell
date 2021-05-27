@@ -79,17 +79,7 @@ etat1 =  Etat True (inserer Feuille 'a' 2)
 etat2 =  Etat False (inserer Feuille 'b' 1) 
 automate = AutomateFini ( inserer (inserer Feuille 1 etat1 ) 2 etat2) 1
 {--
-3. écrire l’évaluation (attention au cas où le caractère lu n’est pas dans
-l’arbre des transitions) qui fonctionne comme suit :
-on part avec le nom i de l’état initial et un mot w0;
-on cherche l’état e0 correspondant à i dans l’(ARN Nom Etat) ;
-on échoue si on ne le trouve pas ;
-si w0 = ε, on renvoi le booléen de terminaison de e0;
-sinon on récupère le premier caractère c0 du mot w0=c0 w1; on récupère l’ARN (t0:: ARN Char String) de transition de l’état ini-tiale 0;
-on utilise c0 pour récupérer le nom n1
-du prochain état ;
-on cherche l’état e1 correspondant à n1 dans l’ARN ; on échoue si on ne le trouve pas ; si w1=ε ,on renvoi le booléen de terminaison de
-e1; etc.
+3. 
 
 --}
 
